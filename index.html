@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vaiya</title>
+    <script src="scripts/portfolioScript.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Emilys+Candy&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />       
+</head>
+<body >
+<!-- navbar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#main">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+<!-- header -->
+    <header  class="flex flex-row " >
+        <img class="logoUpLeft center" src="img/svg_icon/home.svg" onClick="openNav()">
+    </header>
+<div class="main">
+<!-- Première partie, Carte de visite -->
+    <div class="screen margin">
+        <div class="logo-text flex flex-column ">
+            <h1 class="text-align-center font shadow">
+                Vaea Pairon
+            </h1>
+            <p class="text-align-center p-logo-font shadow position">
+                Étudiante en informatique
+            </p>
+            <div class="item margin-auto flex flex-row ">
+                <a class="img" href="https://github.com/Shiraoiii"><img class="img-link img-shadow" src="img/svg_icon/github-logo.svg" alt="lien vers github" title="Mon Github"><p class="link">Shiraoiii</p></a>
+                <a class="img" href="https://www.linkedin.com/in/vaea-pairon-ab2321346/"><img class="img-link img-shadow" src="img/svg_icon/linkedin-logo.svg" alt="lien vers linkedin" title="Mon Linkedin"><p class="link">Vaea Pairon</p></a>
+                <a class="img" href="download/portfolio_competences_annexe.pdf" download><img class="img-link img-shadow" src="img/svg_icon/download.svg" alt="liens vers cv" title="Mon CV"><p class="link">Télécharger mon CV</p></a>
+            </div>
+        </div>
+            <a class="button bottom-top-button-position" href=" #skills"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
+    </div>
+<!-- Seconde partie, partie Skills -->
+    <div class="screen2 margin-auto flex flex-column" id="skills">
+        <!-- Bouton du haut pour scroll vers le haut-->
+        <a class="button top-mid-button-position" href=" #main"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
+        <!--Titre-->
+        <h2 class="font mid-title-position"><img class="section-logo"src="img/svg_icon/skill-icon.png">Compétences</h2>
+        <!--Div pour mettre en ligne les colonnes de skills-->
+        <div class="mid-section-position flex flex-row ">
+            <!--Partie colonne codewars-->
+            <div class="test">
+                <!-- Skills Codewar-->
+                <h3 class="font"><img class="section-logo-codewars"src="https://images.icon-icons.com/2389/PNG/512/codewars_logo_icon_145389.png">Codewars</h2>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="pythonRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNamePython">Python - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="pythonScore"></div>
+                </div>
+                <div class="cw-card flex flex-row">
+                    <div class="cw-rank" id="phpRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-php-logo-icon-svg-download-png-3030200.png?f=webp" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNamePhp">php - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="phpScore"></div>
+                </div>
+                <div class="cw-card flex flex-row">
+                    <div class="cw-rank" id="csharpRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNameCsharp">C# - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="phpScore"></div>
+                </div>
+            </div>
+            <!--Partie colonne autre-->
+            <div class="test">
+                <!-- Skills autre-->
+                <h3 class="font"><img class="section-logo-codewars"src="https://images.icon-icons.com/2389/PNG/512/codewars_logo_icon_145389.png">Codewars</h2>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="pythonRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNamePython">Python - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="pythonScore"></div>
+                </div>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="phpRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-php-logo-icon-svg-download-png-3030200.png?f=webp" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNamePhp">php - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="phpScore"></div>
+                </div>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="csharpRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNameCsharp">C# - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="phpScore"></div>
+                </div>
+            </div>
+            <!--3e colonne autre-->
+            <div class="test">
+                <!-- Skills autre-->
+                <h3 class="font"><img class="section-logo-codewars"src="https://images.icon-icons.com/2389/PNG/512/codewars_logo_icon_145389.png">Codewars</h2>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="pythonRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNamePython">Python - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="pythonScore"></div>
+                </div>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="phpRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-php-logo-icon-svg-download-png-3030200.png?f=webp" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNamePhp">php - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="phpScore"></div>
+                </div>
+                <div class="cw-card  flex flex-row">
+                    <div class="cw-rank" id="csharpRank"></div>
+                        <div class="cw-middle flex flex-row">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
+                            <span class="cw-name" id="dataNameCsharp">C# - Vaeaaa</span>
+                        </div>
+                    <div class="cw-score" id="phpScore"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Bouton du bas pour scroll vers le bas-->
+        <a class="button margin-auto bottom-mid-button-position" href=" #project"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
+    </div>
+<!-- Troisième partie, partie Projet -->
+    <div class="screen3 margin-auto flex flex-column" id="project">
+        <a class="button top-bottom-button-position" href="#skills"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
+        <h2 class="font">Mes projets récents</h2>
+        <div class="article-panel flex flex-row test">
+            <!-- Projet 1-->
+            <article class="article-left flex flex-column">
+                <img class="img-article" src="img/projet_2.jpeg">
+                <div class="article-titre article-titre-padding">Calculateur de calories :</div>
+                <p class="p-padding">Exemple de projet 1.</p>
+                <i class="devicon-csharp-plain logo-language"></i>
+            </article>
+            <!-- Projet 2-->
+            <article class="article-middle flex flex-column">
+                <img class="img-article" src="img/projet_2.jpeg">
+                <div class="article-titre article-titre-padding">Bot discord :</div>
+                <p class="p-padding">Exemple de projet 2.</p>
+                <i class="devicon-csharp-plain logo-language"></i>
+            </article>
+            <!-- Projet 3-->
+            <article class="article-middle2 flex flex-column">
+                <img class="img-article" src="img/projet_2.jpeg">
+                <div class="article-titre article-titre-padding">Site de vente d'électronique :</div>
+                <p class="p-padding">Exemple de projet 3.</p>
+                <i class="devicon-php-plain logo-language-php"></i>
+                <i class="devicon-azuresqldatabase-plain logo-language-sql"></i>
+            </article>
+            <!-- Projet 4-->
+            <article class="article-right flex flex-column">
+                <img class="img-article" src="img/projet_2.jpeg">
+                <div class="article-titre article-titre-padding">Site de vente d'électronique :</div>
+                <p class="p-padding">Exemple de projet 4.</p>
+                <i class="devicon-php-plain logo-language-php"></i>
+                <i class="devicon-azuresqldatabase-plain logo-language-sql"></i>
+            </article>
+        </div>
+    </div>
+<!-- Pied de page -->
+<footer id="contact">
+    <a href=''></a>
+</footer>
+</div>
+</body>
+</html>
