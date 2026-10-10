@@ -81,8 +81,7 @@ article{
     padding-left: 4%;
 }
 .article-panel{
-
-    background-color: ;
+    gap: 2em;
 }
 .logo{
     max-width: 35em;
@@ -107,7 +106,7 @@ h2.font {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: xx-large;
+  font-size: 3em;
 }
 .section-logo{
     width:2.5em;
@@ -143,12 +142,7 @@ p{
     position: relative;
     top: -0.5em;
 }
-.text-align-center{
-    text-align: center;
-}
-.margin-auto{
-    margin:auto;
-}
+
 a{
     text-decoration: none;
     color: #ffc5c7;
@@ -173,14 +167,16 @@ a.button{
     bottom: 5%;
     align-self:center;
 }
-.mid-title-position{
-    position: absolute;
-}
 .mid-section-position{
     position: absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%,-50%);
+}
+.screen-title{
+    position: absolute;
+    
+    top: 10%;
 }
 .top-mid-button-position{
     position: absolute;
@@ -193,16 +189,38 @@ a.button{
     align-self:center;
 }
 .item{
-    width: 30em;
-    height: 10em;
+    width: 40em;
     gap: 1em;
+}
+/* Partie bordure entre les liens*/
+.social {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    /*Aligne le texte au milieu des logos des liens socials*/
+    align-items: center;
+}
+.social + .social {
+    padding-left: 1em;
+}
+.social + .social::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 20%;
+
+    width: 0.1em;
+    height: 50%;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .img{
     width: 100%;
     height: 100%;
 }
 .img-link{
-    width: 35%;
+    width: 40%;
     height: auto;
     float: left;
 }
@@ -402,4 +420,15 @@ i{
   border-left: 2px solid #3a3a42;
 
   clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%, 12px 50%);
+}
+
+/* Tools */
+.align-self-center{
+    align-self: center;
+}
+.text-align-center{
+    text-align: center;
+}
+.margin-auto{
+    margin:auto;
 }
