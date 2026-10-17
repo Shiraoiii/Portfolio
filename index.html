@@ -18,11 +18,11 @@
         <a href="#main">Home</a>
         <a href="#skills">Skills</a>
         <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#veille">Veille</a>
     </div>
 <!-- header -->
     <header  class="flex flex-row " >
-        <img class="logoUpLeft center" src="img/svg_icon/home.svg" onClick="openNav()">
+        <img class="logoUpLeft center" src="img/svg_icon/nav.svg" onClick="openNav()">
     </header>
 <div class="main">
 <!-- Première partie, Carte de visite -->
@@ -80,64 +80,6 @@
                     <div class="cw-score" id="phpScore"></div>
                 </div>
             </div>
-            <!--Partie colonne autre-->
-            <div class="test">
-                <!-- Skills autre-->
-                <h3 class="font"><img class="section-logo-codewars"src="https://images.icon-icons.com/2389/PNG/512/codewars_logo_icon_145389.png">Codewars</h2>
-                <div class="cw-card  flex flex-row">
-                    <div class="cw-rank" id="pythonRank"></div>
-                        <div class="cw-middle flex flex-row">
-                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
-                            <span class="cw-name" id="dataNamePython">Python - Vaeaaa</span>
-                        </div>
-                    <div class="cw-score" id="pythonScore"></div>
-                </div>
-                <div class="cw-card  flex flex-row">
-                    <div class="cw-rank" id="phpRank"></div>
-                        <div class="cw-middle flex flex-row">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-php-logo-icon-svg-download-png-3030200.png?f=webp" alt="Logo Python" class="cw-logo">
-                            <span class="cw-name" id="dataNamePhp">php - Vaeaaa</span>
-                        </div>
-                    <div class="cw-score" id="phpScore"></div>
-                </div>
-                <div class="cw-card  flex flex-row">
-                    <div class="cw-rank" id="csharpRank"></div>
-                        <div class="cw-middle flex flex-row">
-                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
-                            <span class="cw-name" id="dataNameCsharp">C# - Vaeaaa</span>
-                        </div>
-                    <div class="cw-score" id="phpScore"></div>
-                </div>
-            </div>
-            <!--3e colonne autre-->
-            <div class="test">
-                <!-- Skills autre-->
-                <h3 class="font"><img class="section-logo-codewars"src="https://images.icon-icons.com/2389/PNG/512/codewars_logo_icon_145389.png">Codewars</h2>
-                <div class="cw-card  flex flex-row">
-                    <div class="cw-rank" id="pythonRank"></div>
-                        <div class="cw-middle flex flex-row">
-                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
-                            <span class="cw-name" id="dataNamePython">Python - Vaeaaa</span>
-                        </div>
-                    <div class="cw-score" id="pythonScore"></div>
-                </div>
-                <div class="cw-card  flex flex-row">
-                    <div class="cw-rank" id="phpRank"></div>
-                        <div class="cw-middle flex flex-row">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-php-logo-icon-svg-download-png-3030200.png?f=webp" alt="Logo Python" class="cw-logo">
-                            <span class="cw-name" id="dataNamePhp">php - Vaeaaa</span>
-                        </div>
-                    <div class="cw-score" id="phpScore"></div>
-                </div>
-                <div class="cw-card  flex flex-row">
-                    <div class="cw-rank" id="csharpRank"></div>
-                        <div class="cw-middle flex flex-row">
-                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo Python" class="cw-logo">
-                            <span class="cw-name" id="dataNameCsharp">C# - Vaeaaa</span>
-                        </div>
-                    <div class="cw-score" id="phpScore"></div>
-                </div>
-            </div>
         </div>
         <!-- Bouton du bas pour scroll vers le bas-->
         <a class="button margin-auto bottom-mid-button-position" href=" #project"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
@@ -145,42 +87,105 @@
 <!-- Troisième partie, partie Projet -->
     <div class="screen3 margin-auto flex flex-column" id="project">
         <a class="button top-bottom-button-position" href="#skills"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
-        <h2 class="font screen-title">Projets récents</h2>
-        <div class="mid-section-position article-panel flex flex-row test">
+        <h2 class="font screen-title">Projets réalisés</h2>
+        <div class="mid-section-position-3 article-panel flex flex-row test gap">
             <!-- Projet 1-->
-            <article class="article-left flex flex-column">
-                <img class="img-article" src="img/projet_2.jpeg">
-                <div class="article-titre article-titre-padding">Calculateur de calories :</div>
-                <p class="p-padding">Exemple de projet 1.</p>
-                <i class="devicon-csharp-plain logo-language"></i>
-            </article>
+            <div class="project flex flex-column">
+                <img class="img-article" src="img/projet_1.png">
+
+                <div class="project-content">
+                    <div class="article-titre">Calculateur de calories</div>
+
+                    <p class="project-description">
+                        Application Windows Forms permettant d'estimer les apports caloriques
+                        à partir des aliments et des quantités saisies.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>WinForms</span>
+                        <span>JSON</span>
+                    </div>
+
+                    <ul class="project-features">
+                        <li>Gestion des données alimentaires</li>
+                        <li>Calcul automatique des calories</li>
+                        <li>Gestion des consommations</li>
+                    </ul>
+
+                    <div class="project-footer">
+                        <i class="devicon-csharp-plain logo-language"></i>
+
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
             <!-- Projet 2-->
-            <article class="article-middle flex flex-column">
-                <img class="img-article" src="img/projet_2.jpeg">
-                <div class="article-titre article-titre-padding">Bot discord :</div>
-                <p class="p-padding">Exemple de projet 2.</p>
-                <i class="devicon-csharp-plain logo-language"></i>
-            </article>
+            <div class="project flex flex-column">
+                <img class="img-article" src="img/projet2.JPG">
+
+                <div class="project-content">
+                    <div class="article-titre">Bot Discord</div>
+
+                    <p class="project-description">
+                        Application console en C#, communiquant avec l'api de discord afin de gérer et créer de la vie sur un serveur.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>Gestion API</span>
+                        <span>JSON</span>
+                    </div>
+
+                    <ul class="project-features">
+                        <li>Communication avec l'API de Discord</li>
+                        <li>Gestion d'un système de monnaie appelé "fame"</li>
+                        <li>Ajout de commande spécifique au bot selon les besoins du serveur</li>
+                        <li>Création et enregistrement dans une base de donnée pour chaque personnes du serveur</li>
+                    </ul>
+
+                    <div class="project-footer">
+                        <i class="devicon-csharp-plain logo-language"></i>
+
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
             <!-- Projet 3-->
-            <article class="article-middle2 flex flex-column">
-                <img class="img-article" src="img/projet_2.jpeg">
-                <div class="article-titre article-titre-padding">Site de vente d'électronique :</div>
-                <p class="p-padding">Exemple de projet 3.</p>
-                <i class="devicon-php-plain logo-language-php"></i>
-                <i class="devicon-azuresqldatabase-plain logo-language-sql"></i>
-            </article>
-            <!-- Projet 4-->
-            <article class="article-right flex flex-column">
-                <img class="img-article" src="img/projet_2.jpeg">
-                <div class="article-titre article-titre-padding">Site de vente d'électronique :</div>
-                <p class="p-padding">Exemple de projet 4.</p>
-                <i class="devicon-php-plain logo-language-php"></i>
-                <i class="devicon-azuresqldatabase-plain logo-language-sql"></i>
-            </article>
+            <div class="project flex flex-column">
+                <img class="img-article" src="img/projet3.JPG">
+
+                <div class="project-content">
+                    <div class="article-titre">Portfolio</div>
+
+                    <p class="project-description">
+                        Création d'un site servant de portfolio.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Html/css</span>
+                        <span>Javascript</span>
+                        <span>Gestion API</span>
+                    </div>
+
+                    <ul class="project-features">
+                        <li>Communication avec une API</li>
+                        <li>Gestion d'un système de monnaie appelé "fame"</li>
+                        <li>Ajout de commande spécifique au bot selon les besoins du serveur</li>
+                        <li>Création et enregistrement dans une base de donnée pour chaque personnes du serveur</li>
+                    </ul>
+
+                    <div class="project-footer">
+                        <i class="devicon-csharp-plain logo-language"></i>
+
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 <!-- Pied de page -->
-<footer id="contact">
+<footer id="veille">
     <a href=''></a>
 </footer>
 </div>
