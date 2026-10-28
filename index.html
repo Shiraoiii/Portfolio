@@ -15,10 +15,10 @@
 <!-- navbar -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#main">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
-        <a href="#veille">Veille</a>
+        <a href="#main" class="navBtn">Home</a>
+        <a href="#skills" class="navBtn">Skills</a>
+        <a href="#project" class="navBtn">Projects</a>
+        <a href="#veille" class="navBtn">Veille</a>
     </div>
 <!-- header -->
     <header  class="flex flex-row " >
@@ -26,33 +26,35 @@
     </header>
 <div class="main">
 <!-- Première partie, Carte de visite -->
-    <div class="screen margin">
-        <div class="logo-text flex flex-column ">
-            <h1 class="align-self-center font shadow">
-                Vaea Pairon
-            </h1>
-            <p class="align-self-center p-logo-font shadow position">
-                Étudiante en informatique
-            </p>
+    <div class="screen screen1 margin-auto">
+        <div class="logo flex flex-column">
+            <div class="flex flex-column logo2">
+                <h1 class="align-self-center font shadow">
+                    Vaea Pairon
+                </h1>
+                <p class="align-self-center p-logo-font text-align-center shadow">
+                    Étudiante BTS SIO SLAM en recherche de stage
+                </p>
+            </div>
             <div class="item flex flex-row align-self-center">
-                <a class="img social" href="https://github.com/Shiraoiii"><img class="img-link img-shadow" src="img/svg_icon/github-logo.svg" alt="lien vers github" title="Mon Github"><p class="link">Shiraoiii</p></a>
-                <a class="img social" href="https://www.linkedin.com/in/vaea-pairon-ab2321346/"><img class="img-link img-shadow" src="img/svg_icon/linkedin-logo.svg" alt="lien vers linkedin" title="Mon Linkedin"><p class="link">Vaea Pairon</p></a>
-                <a class="img social" href="download/portfolio_competences_annexe.pdf" download><img class="img-link img-shadow" src="img/svg_icon/download.svg" alt="liens vers cv" title="Mon CV"><p class="link">Télécharger mon CV</p></a>
-                <a class="img social" href="mailto:vaea.pairon@gmail.com" post><img class="img-link img-shadow" src="img/svg_icon/envelope-closed.svg" alt="liens vers cv" title="Mon CV"><p class="link">Me contacter</p></a>
+                <a class="social" href="https://github.com/Shiraoiii"><img class="img-link" src="img/svg_icon/github-logo.svg" alt="lien vers github" title="Mon Github"><p class="link">Shiraoiii</p></a>
+                <a class="social" href="https://www.linkedin.com/in/vaea-pairon-ab2321346/"><img class="img-link" src="img/svg_icon/linkedin-logo.svg" alt="lien vers linkedin" title="Mon Linkedin"><p class="link">Vaea Pairon</p></a>
+                <a class="social" href="download/portfolio_competences_annexe.pdf" download><img class="img-link" src="img/svg_icon/download.svg" alt="liens vers cv" title="Mon CV"><p class="link">Télécharger mon CV</p></a>
+                <a class="social" href="mailto:" post><img class="img-link" src="img/svg_icon/envelope-closed.svg" alt="liens vers cv" title="Mon CV"><p class="link">Me contacter</p></a>
             </div>
         </div>
-            <a class="button bottom-top-button-position" href=" #skills"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
+        <a class="button bottom-screen-button" href=" #skills"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
     </div>
 <!-- Seconde partie, partie Skills -->
-    <div class="screen2 margin-auto flex flex-column" id="skills">
+    <div class="screen screen2 margin-auto" id="skills">
         <!-- Bouton du haut pour scroll vers le haut-->
-        <a class="button top-mid-button-position" href=" #main"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
+        <a class="button top-screen-button" href=" #main"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
         <!--Titre-->
         <h2 class="font screen-title"><img class="section-logo"src="img/svg_icon/skill-icon.png">Compétences</h2>
         <!--Div pour mettre en ligne les colonnes de skills-->
-        <div class="mid-section-position flex flex-row ">
+        <div class="mid-section-position">
             <!--Partie colonne codewars-->
-            <div class="test">
+            <div class="codewars">
                 <!-- Skills Codewar-->
                 <h3 class="font"><img class="section-logo-codewars"src="https://images.icon-icons.com/2389/PNG/512/codewars_logo_icon_145389.png">Codewars</h2>
                 <div class="cw-card  flex flex-row">
@@ -82,13 +84,13 @@
             </div>
         </div>
         <!-- Bouton du bas pour scroll vers le bas-->
-        <a class="button margin-auto bottom-mid-button-position" href=" #project"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
+        <a class="button bottom-screen-button" href=" #project"><img class="img-button" src="img/svg_icon/chevron-down.svg"></a>
     </div>
 <!-- Troisième partie, partie Projet -->
-    <div class="screen3 margin-auto flex flex-column" id="project">
-        <a class="button top-bottom-button-position" href="#skills"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
+    <div class="screen screen3 margin-auto" id="project">
+        <a class="button top-screen-button" href="#skills"><img class="img-button" src="img/svg_icon/chevron-up.svg"></a>
         <h2 class="font screen-title">Projets réalisés</h2>
-        <div class="mid-section-position-3 article-panel flex flex-row test gap">
+        <div class="mid-section-position article-panel flex flex-row  gap">
             <!-- Projet 1-->
             <div class="project flex flex-column">
                 <img class="img-article" src="img/projet_1.png">
@@ -114,7 +116,6 @@
                     </ul>
 
                     <div class="project-footer">
-                        <i class="devicon-csharp-plain logo-language"></i>
 
                         <a href="#">Voir le projet</a>
                     </div>
@@ -145,7 +146,7 @@
                     </ul>
 
                     <div class="project-footer">
-                        <i class="devicon-csharp-plain logo-language"></i>
+
 
                         <a href="#">Voir le projet</a>
                     </div>
@@ -176,7 +177,7 @@
                     </ul>
 
                     <div class="project-footer">
-                        <i class="devicon-csharp-plain logo-language"></i>
+
 
                         <a href="#">Voir le projet</a>
                     </div>
